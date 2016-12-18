@@ -1,0 +1,36 @@
+﻿<Page
+    x:Class="Холодильник.SelectPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Холодильник"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Pivot x:Name="rootPivot" Title="Pivot Title">
+        <PivotItem Header="Книга">
+            <!--Pivot content goes here-->
+            <TextBlock Text="Content of pivot item 1." Height="545" VerticalAlignment="Bottom"/>
+        </PivotItem>
+        <PivotItem Header="Ингредиенты">
+            <ListView x:Name="RootListView" HorizontalAlignment="Left" Height="Auto" Margin="0,0,0,0" Grid.Row="1" VerticalAlignment="Top" HorizontalContentAlignment="Left">
+                <TextBlock Text="Мясо"/>
+                <ListBox x:Name="listViewMeat" HorizontalAlignment="Left" Height="Auto" Margin="0,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="Auto" HorizontalContentAlignment="Left">
+                    <CheckBox Content="Option1"/>
+                    <CheckBox Content="Option2"/>
+                    <CheckBox Content="Option3"/>
+                    <CheckBox Content="Option4"/>
+                    <CheckBox Content="Option5"/>
+                </ListBox>
+                <TextBlock Text="Фрукты"/>
+                <ListBox x:Name="listViewFruit" HorizontalAlignment="Left" Height="Auto" Margin="0,0,0,0" Grid.Row="1" VerticalAlignment="Top" Width="Auto" HorizontalContentAlignment="Left">
+                    <CheckBox Content="Option1"/>
+                    <CheckBox Content="Option2"/>
+                    <CheckBox Content="Option3"/>
+                    <CheckBox Content="Option4"/>
+                    <CheckBox Content="Option5"/>
+                </ListBox>
+            </ListView>
+        </PivotItem>
+    </Pivot>
+</Page>
